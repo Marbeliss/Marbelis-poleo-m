@@ -1,0 +1,16 @@
+/**narra de navegacion*/
+.navbar{
+    padding: 2rem;
+    background-color: #192028;
+}
+
+.navbar-collapse{
+    align-items: center;
+    justify-content: space-between; /*enlaces del navbar al lado derecho*/
+}
+
+@media screen and (max-width: 767px) { /*para ocultar el icono en pantallas pequeñas*/
+    .navbar-brand{
+        display: none;
+    }   
+}
