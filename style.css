@@ -1,9 +1,20 @@
-/**narra de navegacion*/
-.navbar{
-    padding: 2rem;
-    background-color: #192028;
+
+::-webkit-scrollbar { /*Ocultar todas las barras de desplazamiento*/
+    display: none;
 }
 
+
+/**narra de navegacion*/
+.navbar{
+   padding: 2rem;
+   font-family: "Questrial", sans-serif; 
+    color: #F8F5FF;
+    position: fixed;
+    z-index: 4; /* Ajusta el valor según tus necesidades */
+    background-color: #192028;
+
+}
+    
 .navbar-collapse{
     align-items: center;
     justify-content: space-between; /*enlaces del navbar al lado derecho*/
@@ -14,3 +25,151 @@
         display: none;
     }   
 }
+
+.navbar-toggler{
+    border: none !important;
+    color: #8C52FF;
+  }
+
+.nav-link:hover{
+    color: #8C52FF;
+}
+/*seccion hero*/
+.hero{
+    background-color: #192028;
+    min-height: 100vh;
+    text-align: center;
+    background-image: url(https://i.postimg.cc/MG9cKQYQ/Frame-529-2.png);
+    background-repeat: no-repeat;
+    background-size: cover; /*para que cubra toda la pantalla*/
+    background-position: center;
+}
+
+/*estilos generales*/
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.seccion-oscura{
+    background-color: #192028;
+    color: #F8F5FF;
+}
+
+
+.seccion-clara{
+    background-color: #F8F5FF;
+    color: #192028; 
+}
+
+
+.seccion-titulo{
+    font-size: 2rem;
+    color: #F8F5FF;
+    padding: 15px 0;
+    font-family: "Questrial", sans-serif; 
+    
+}
+
+.seccion-texto{
+    font-size: 1.1rem;
+    color: #F8F5FF;
+    justify-content: center;
+    
+}
+
+/*seccion Hero*/
+.hero-principal{
+    padding: 3rem;
+    color: #F8F5FF;
+    padding-top: 5rem;
+}
+
+
+.button{ /*clase solo se le coloca punto y las etiquetas no ya que son nativas*/
+    position: relative;
+    display: inline-block;
+    margin-top: 5px;
+    padding: 10px 20px; /*ancho/largo*/
+    text-align: center;
+    font-size: 15px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: #8C52FF;
+    background: transparent;
+    cursor: pointer;
+    transition: ease-out 0.5s;
+    border: 2px solid #8C52FF;
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 #8C52FF;
+    font-family: 'Poppins', sans-serif;
+  }
+      
+  .button:hover {
+    color: #F8F5FF;
+    box-shadow: inset 0 -100px 0 0 #8C52FF;
+  }
+  
+  .button:active {
+    transform: scale(0.9);
+} 
+
+/*sobre mi*/
+.sobre-mi{
+    height: 100%;
+    padding: 1.25rem;
+    text-align: center;
+    
+}
+
+.sobre-mi .contedor{
+    max-width: 600px;
+    text-align: center;
+    
+}
+
+
+/*seccion experiencia*/
+.experiencia{
+    padding: 40px;
+}
+
+
+.experiencia .row div{
+    height: 250px;
+    background-color: #192028;
+    border: 3px solid #192028;
+}
+
+.experiencia-titulo{
+    font-size: 25px;
+    font-weight: bold;
+    margin: 10px 0;
+}
+
+.experiencia{
+    padding: 40px 40px 60px 40px;
+}
+
+
+/**/
+
+#miDiv {
+    display: none; /* Oculta el div inicialmente */
+    background-color: #192028;
+    padding: 10px;
+}
+
+/*proyectos*/
+.proyectos-recientes{
+    padding: 40px;
+}
+
+.seccion-descripcion{
+   font-size: 1.2rem;
+   color: #F8F5FF; 
+}
+
+/*------------------*/
