@@ -1,3 +1,6 @@
+body {
+    background-color:#192028;
+}
 
 ::-webkit-scrollbar { /*Ocultar todas las barras de desplazamiento*/
     display: none;
@@ -5,7 +8,7 @@
 
 
 /**narra de navegacion*/
-.navbar{
+.navbar {
    padding: 2rem;
    font-family: "Questrial", sans-serif; 
     color: #F8F5FF;
@@ -15,7 +18,7 @@
 
 }
     
-.navbar-collapse{
+.navbar-collapse {
     align-items: center;
     justify-content: space-between; /*enlaces del navbar al lado derecho*/
 }
@@ -26,12 +29,12 @@
     }   
 }
 
-.navbar-toggler{
+.navbar-toggler {
     border: none !important;
     color: #8C52FF;
   }
 
-.nav-link:hover{
+.nav-link:hover {
     color: #8C52FF;
 }
 /*seccion hero*/
@@ -39,41 +42,42 @@
     background-color: #192028;
     min-height: 100vh;
     text-align: center;
-    background-image: url(https://i.postimg.cc/MG9cKQYQ/Frame-529-2.png);
+    background-image: url(https://i.postimg.cc/9fHcs9KY/Fondo-youtube-3.png);
     background-repeat: no-repeat;
     background-size: cover; /*para que cubra toda la pantalla*/
     background-position: center;
 }
 
 /*estilos generales*/
-section{
+section {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
 
-.seccion-oscura{
+.seccion-oscura {
     background-color: #192028;
     color: #F8F5FF;
 }
 
 
-.seccion-clara{
+.seccion-clara {
     background-color: #F8F5FF;
     color: #192028; 
 }
 
 
-.seccion-titulo{
+.seccion-titulo {
     font-size: 2rem;
     color: #F8F5FF;
     padding: 15px 0;
     font-family: "Questrial", sans-serif; 
+    margin-top: 6rem;
     
 }
 
-.seccion-texto{
+.seccion-texto {
     font-size: 1.1rem;
     color: #F8F5FF;
     justify-content: center;
@@ -81,14 +85,14 @@ section{
 }
 
 /*seccion Hero*/
-.hero-principal{
+.hero-principal {
     padding: 3rem;
     color: #F8F5FF;
     padding-top: 5rem;
 }
 
 
-.button{ /*clase solo se le coloca punto y las etiquetas no ya que son nativas*/
+.button { /*clase solo se le coloca punto y las etiquetas no ya que son nativas*/
     position: relative;
     display: inline-block;
     margin-top: 5px;
@@ -117,39 +121,41 @@ section{
 } 
 
 /*sobre mi*/
-.sobre-mi{
+.sobre-mi {
     height: 100%;
     padding: 1.25rem;
     text-align: center;
+    margin-top: 2rem;
     
 }
 
-.sobre-mi .contedor{
+.sobre-mi .contedor {
     max-width: 600px;
     text-align: center;
+    margin-top: 2rem;
     
 }
 
 
 /*seccion experiencia*/
-.experiencia{
+.experiencia {
     padding: 40px;
 }
 
 
-.experiencia .row div{
+.experiencia .row div {
     height: 250px;
-    background-color: #192028;
-    border: 3px solid #192028;
+    background-color: #252b32;
+    border: 1px solid #1d2229;
 }
 
-.experiencia-titulo{
+.experiencia-titulo {
     font-size: 25px;
     font-weight: bold;
     margin: 10px 0;
 }
 
-.experiencia{
+.experiencia {
     padding: 40px 40px 60px 40px;
 }
 
@@ -163,13 +169,201 @@ section{
 }
 
 /*proyectos*/
-.proyectos-recientes{
-    padding: 40px;
-}
 
-.seccion-descripcion{
-   font-size: 1.2rem;
-   color: #F8F5FF; 
-}
+
+
+
+.galeria{
+    min-height: 1px;
+    background-image: linear-gradient(to right, #192028 0%, #192028 90%);
+    position: relative;
+  }
+  
+   /*Mejorar y separar las tarjetas de boostrap*/
+  .card-group .card{
+    width: 21rem;
+    height: 11.5rem;/*medidas del card posterior*/
+    border-radius: .5rem;
+    box-shadow: 0 2px 7px hsl(260, 100%, 66%);
+    overflow: hidden;
+    margin: 1.2rem;
+    transition: all 0.25s;
+  }
+  
+  /*animacion al tocar card*/
+  .card-group .card:hover{
+    transform: translateY(-15px);
+    box-shadow: 0 12px 16px hsla(260, 100%, 66%, 0.258);
+  }
+  
+  /*------------------*/
+  
+  .card {
+    position: relative;
+    width: 100px;
+    height: 100px;
+    background-color: #192028; /**color de card fondo*/
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    perspective: 1000px;
+    box-shadow: 0 0 0 5px #ffffff80;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+
+  .card__content {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    padding: 15px;
+    box-sizing: border-box;
+    background-image: linear-gradient(to right, #8C52FF 0%, hsla(260, 100%, 66%, 0.838) 90%); /*color de card*/
+    transform: rotateX(-90deg);
+    transform-origin: bottom;
+    transition: all 0.6s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+  .card:hover .card__content {
+    transform: rotateX(0deg);
+  }
+  
+  .card__title {
+    margin: 0;
+    font-size: 24px;
+    color: #F8F5FF; /*titulo*/
+    font-weight: 700;
+
+  }
+  
+  .card:hover svg {
+    scale: 0;
+  }
+  
+  .card__description {
+    margin: 10px 0 0;
+    font-size: 14px;
+    color: #F8F5FF;
+    line-height: 1.4;
+  }
+  
+  
+  /*----------Button----------*/
+
 
 /*------------------*/
+
+.iconos-redes-sociales a{
+  width: 2rem;
+  height: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: rgb(142, 142, 235);
+  border: 2px solid rgb(224, 224, 224);
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+  margin: 1em;
+
+}
+
+.iconos-redes-sociales i{
+  color: #F8F5FF;
+  font-size: 1rem;
+  transition: all 0.2s ease-in;
+  
+ 
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: linear-gradient(to right, #d7c9d3 0%, #D7CCD5 100%);;;;
+  border: 2px #F8F5FF;
+}
+
+.iconos-redes-sociales a:hover i {
+  color: #192028;
+}
+
+
+
+
+/*Contacto*/
+.contacto .container{
+  max-width: 68.75rem;
+  min-height: 12.5rem;
+  padding: 1.25rem;
+
+}
+
+.contacto .rectagunlo{
+  margin-top: -5rem;
+  background-color: rgb(16, 15, 15);
+  border: 10px;
+  box-shadow: 0px 1px 4px 1px #F8F5FF;
+
+}
+
+.contacto .row{
+  width: 100%;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+
+/*Pie de pg-(footer)*/
+
+.footer{
+  min-height: 31.25rem;
+}
+
+.footer-texto{
+  font-size: 1rem;
+  padding: 1rem;
+  margin-bottom: 1.875rem;
+  font-family: "Questrial", sans-serif; 
+}
+
+.iconos-redes-sociales a{
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 2px;
+  margin: blue;
+  border: 2px solid #8C52FF;
+  border-radius: 50%;
+  transition: all 0.2s ease-in;
+  margin: 1em;
+
+}
+
+.iconos-redes-sociales i{
+  color: #F8F5FF;
+  font-size: 1rem;
+  transition: all 0.2s ease-in;
+}
+
+.iconos-redes-sociales a:hover {
+  background-color: linear-gradient(to right, #304352 0%, #D7CCD5 100%);
+  border: 2px #F8F5FF;
+}
+
+.iconos-redes-sociales a:hover i {
+  color: #8C52FF;
+
+}
+
+.derechos-de-autor{
+  font-size: 13px;
+  font-family: "Questrial", sans-serif; 
+  color: #F8F5FF;
+  padding: 20px;
+}
