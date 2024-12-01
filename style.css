@@ -9,7 +9,7 @@ body {
 
 /**narra de navegacion*/
 .navbar {
-   padding: 2rem;
+   padding: 0rem;
    font-family: "Questrial", sans-serif; 
     color: #F8F5FF;
     position: fixed;
