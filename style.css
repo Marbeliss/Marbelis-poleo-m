@@ -314,18 +314,6 @@ section {
 }
 
 
-/*carousel*/
-.carousel{
-    background-color: #192028;
-    min-height: 100vh;
-    text-align: center;
-    background-image: url(https://i.postimg.cc/wTZzTYx1/fondo-de-portada.png);
-    background-repeat: no-repeat;
-    background-size: cover; /*para que cubra toda la pantalla*/
-    background-position: center;
-}
-
-
 
 /*Pie de pg-(footer)*/
 
