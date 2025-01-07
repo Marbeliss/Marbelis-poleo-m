@@ -370,14 +370,7 @@ section {
 
 /*Galeria*/
 
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&display=swap");
-body{
-  margin: 0px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  min-height: 100vh
-}
+
 .auto_slider_container{
   max-width: 94rem;
   width: 100%;
