@@ -369,18 +369,7 @@ section {
 
 
 /*Galeria*/
-*{
-	margin: 0px;
-	padding: 0px;
-	-webkit-box-sizing: border-box;
-	-moz-box-sizing: border-box;
-	box-sizing: border-box;
-}
 
-body{
-	background: #E3E3E3;
-	font-family: 'Open Sans', sans-serif;
-}
 
 h1{
   font-weight: normal;
