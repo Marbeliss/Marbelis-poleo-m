@@ -369,5 +369,71 @@ section {
 
 
 /*Galeria*/
+*{
+	margin: 0px;
+	padding: 0px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+}
 
+body{
+	background: #E3E3E3;
+	font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+  font-weight: normal;
+  text-align: center;
+  padding-top: 1em;
+  color: #444;
+}
+
+.main-gallery{
+  width: 100%;
+  max-width: 90%;
+  margin: 20px auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+article{
+  width: calc(25% - 20px);
+  padding: 10px;
+  background: #FFF;
+  margin: 10px;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, .1);
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+article:hover{
+  box-shadow: 2px 3px 5px rgba(0, 0, 0, .1);
+}
+
+article .photo{
+  width: 100%;
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+article .photo img{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  object-fit: cover;
+}
+
+article p{
+  text-align: center;
+  font-size: 14px;
+  padding-top: 10px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
 
