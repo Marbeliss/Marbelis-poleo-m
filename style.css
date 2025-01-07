@@ -371,32 +371,3 @@ section {
 /*Galeria*/
 
 
-.col-md-3{
-  margin: 0;
-  padding: 1px !important;
-  margin-top: 1px;
-}
-.imagem{
-  background-color: #95a5a6;
-  height: 200px;
-  overflow: hidden;
-  display: table;
-  width: 100%;
-  position: relative;
-  text-align: center;
-  
-  &::before{
-    content: 'Conteúdo';
-    position: absolute;
-    display: none;
-    vertical-align: middle;
-    height: 100%;
-    width: 100%;
-    color: #FFF;
-    background-color: rgba(#c0392b, 0.99);
-  }
-  
-  &:hover::before{
-    display: table-cell;
-  }
-}
